@@ -3,7 +3,12 @@ import styles from "./MenuList.module.css";
 import MenuItem from "../MenuItem/MenuItem";
 import bakeryItems from "../../assets/data.js";
 
-const MenuList = ({ cartContent, setCartContent }) => {
+const MenuList = ({
+  cartContent,
+  setCartContent,
+  addToCartButtonActive,
+  setAddToCartButtonActive,
+}) => {
   return (
     <>
       <h1 className={styles.dessertHeader}>High Carb Haven</h1>
@@ -15,6 +20,12 @@ const MenuList = ({ cartContent, setCartContent }) => {
               item={item}
               cartContent={cartContent}
               setCartContent={setCartContent}
+              addToCartButtonActive={addToCartButtonActive}
+              setAddToCartButtonActive={setAddToCartButtonActive}
+              itemQuantity={
+                cartContent.find((cartItem) => cartItem.menuItemNum === item.id)
+                  ?.qty || 0
+              }
             />
           );
         })}

@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 img {
   max-width: 100%;
 }
@@ -19,16 +13,6 @@ button {
   padding: 2rem 2rem;
   position: relative;
   background: var(--color-Rose-100);
-
-  /* Theme colors */
-  --color-Red: hsl(14, 80%, 31%);
-  --color-Green: hsl(159, 69%, 38%);
-  --color-Rose-50: hsl(20, 50%, 98%);
-  --color-Rose-100: hsl(13, 31%, 94%);
-  --color-Rose-300: hsl(14, 25%, 72%);
-  --color-Rose-400: hsl(7, 20%, 60%);
-  --color-Rose-500: hsl(12, 20%, 44%);
-  --color-Rose-900: hsl(14, 65%, 9%);
 }
 
 @media screen and (min-width: 769px) {
